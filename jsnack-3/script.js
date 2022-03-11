@@ -8,3 +8,12 @@ finchè l'utente inserisci un valore che non è un numero oppure che non è lung
 while(isNaN(parseInt(numeroUser)) || numeroUser.length !== 4 ){
     numeroUser = prompt('Inserisci un numero di quattro cifre');
 }
+
+//Dichiariamo la variabile somma e le diamo un valore = 0.
+let somma = 0;
+for(let i=0 ; i < numeroUser.length; i++){
+    const carattere = numeroUser[i];
+    somma += parseInt(carattere);
+}
+
+console.log(`la somma delle cifre del numero ${numeroUser} è: ${somma}`);
